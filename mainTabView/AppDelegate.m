@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+#import "HomeMainVC.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[HomeMainVC alloc] init]];
+    NSDictionary *textAttributes = @{
+                                     NSFontAttributeName:[UIFont systemFontOfSize:0],
+                                     NSForegroundColorAttributeName:[UIColor whiteColor]
+                                     };
+    [[UINavigationBar appearance]setBarTintColor:[UIColor brownColor]];
+    [[UINavigationBar appearance]setTintColor:[UIColor whiteColor]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
     return YES;
 }
 

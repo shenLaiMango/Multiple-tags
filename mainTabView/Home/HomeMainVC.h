@@ -1,5 +1,6 @@
+//
 /*!
- @header AppDelegate.h
+ @header HomeMainVC
  
  @abstract  作者Github地址：https://github.com/qqsfsffs/Multiple-tags
  作者CSDN博客地址:神来钥匙 : http://www.cnblogs.com/shenlaiyaoshi/
@@ -13,10 +14,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface HomeMainVC : UIViewController
 
 @end
-
